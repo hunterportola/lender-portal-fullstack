@@ -42,28 +42,6 @@ const inputVariants = cva(
   }
 )
 
-const labelVariants = cva(
-  'absolute left-0 font-serif text-steel transition-all duration-200 pointer-events-none peer-focus:text-grass peer-disabled:opacity-50',
-  {
-    variants: {
-      size: {
-        sm: 'text-xs peer-focus:top-1 peer-focus:text-xs peer-[:not(:placeholder-shown)]:top-1 peer-[:not(:placeholder-shown)]:text-xs',
-        md: 'text-sm peer-focus:top-1.5 peer-focus:text-xs peer-[:not(:placeholder-shown)]:top-1.5 peer-[:not(:placeholder-shown)]:text-xs',
-        lg: 'text-base peer-focus:top-2 peer-focus:text-sm peer-[:not(:placeholder-shown)]:top-2 peer-[:not(:placeholder-shown)]:text-sm',
-        xl: 'text-lg peer-focus:top-2.5 peer-focus:text-base peer-[:not(:placeholder-shown)]:top-2.5 peer-[:not(:placeholder-shown)]:text-base',
-      },
-      position: {
-        center: '',
-        top: '',
-      },
-    },
-    defaultVariants: {
-      size: 'md',
-      position: 'center',
-    },
-  }
-)
-
 export interface InputProps
   extends Omit<React.InputHTMLAttributes<HTMLInputElement>, 'size'>,
     VariantProps<typeof inputVariants> {
