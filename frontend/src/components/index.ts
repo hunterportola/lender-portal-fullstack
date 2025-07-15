@@ -8,3 +8,4 @@ export { YearInput } from './YearInput'
 export { DollarAmountInput } from './DollarAmountInput'
 export { CurrencyInput } from './CurrencyInput'
 export { CustomSearchDropdown } from './CustomSearchDropdown'
+export { SocialSecurityNumberInput } from './SocialSecurityNumberInput';
